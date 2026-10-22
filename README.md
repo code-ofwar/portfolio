@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Portfolio
+
+A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS to showcase my skills, technologies, and projects.
+
+## Live Demo
+
+[View My Portfolio](https://my-portfolio-theta-ochre-40.vercel.app/)
+
+## Features
+
+- Responsive design for desktop and mobile devices
+- Introduction and developer profile
+- Technical skills and technologies
+- Project showcase
+- Contact form powered by Formspree
+- Navigation to GitHub and project links
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Formspree
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js
+- npm
+
+### Installation
+
+1. Clone the repository.
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Configure any required environment variables for the contact form, if applicable.
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000).
+
+## Featured Project
+
+### KSP Shop
+
+A full-stack e-commerce application featuring authentication, product management, a shopping cart, checkout, order tracking, and an admin dashboard.
+
+## Author
+
+GitHub: https://github.com/code-ofwar
+
+## Known Issues
+
+### 1. Prisma Version Compatibility
+
+The project currently uses a Prisma release-candidate version, which may cause compatibility issues.
+
+**Temporary workaround:** The `migrations` directory is excluded from TypeScript checks in `tsconfig.json`:
+
+```json
+"exclude": ["node_modules", "migrations"]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This workaround is temporary and should be reviewed after upgrading to a compatible Prisma version.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Concurrent Stock Updates
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The current order creation logic does not fully prevent race conditions when multiple orders attempt to purchase the same product simultaneously. This may result in incorrect stock levels or overselling.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Planned improvement:** Implement concurrency-safe stock updates using atomic conditional database updates or appropriate database locking and transaction isolation.
