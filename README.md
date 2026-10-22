@@ -15,6 +15,10 @@ A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS to
 - Contact form powered by Formspree
 - Navigation to GitHub and project links
 
+## Screenshot
+
+![My Portfolio](./screenshots/my-portfolio.png)
+
 ## Tech Stack
 
 - Next.js
@@ -59,22 +63,4 @@ A full-stack e-commerce application featuring authentication, product management
 
 GitHub: https://github.com/code-ofwar
 
-## Known Issues
 
-### 1. Prisma Version Compatibility
-
-The project currently uses a Prisma release-candidate version, which may cause compatibility issues.
-
-**Temporary workaround:** The `migrations` directory is excluded from TypeScript checks in `tsconfig.json`:
-
-```json
-"exclude": ["node_modules", "migrations"]
-```
-
-This workaround is temporary and should be reviewed after upgrading to a compatible Prisma version.
-
-### 2. Concurrent Stock Updates
-
-The current order creation logic does not fully prevent race conditions when multiple orders attempt to purchase the same product simultaneously. This may result in incorrect stock levels or overselling.
-
-**Planned improvement:** Implement concurrency-safe stock updates using atomic conditional database updates or appropriate database locking and transaction isolation.
