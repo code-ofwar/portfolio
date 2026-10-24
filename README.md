@@ -57,7 +57,7 @@ A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS to
 
 ### KSP Shop
 
-A full-stack e-commerce application featuring authentication, product management, a shopping cart, checkout, order tracking, and an admin dashboard.
+A full-stack e-commerce application featuring authentication, product management, a shopping cart, checkout, order tracking, and an administrative management features.
 
 ## Author
 
