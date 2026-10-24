@@ -49,7 +49,7 @@ const HomePage = () => {
       name: "KSP Shop — Full-Stack E-commerce",
       type: "Fullstack",
       description:
-        "A full-stack e-commerce platform built with Next.js, Prisma, and PostgreSQL.\nFeatures secure authentication, product and category management, customer reviews, a shopping cart, checkout, and order tracking.\nIncludes an admin dashboard for managing products, categories, and orders, with role-based authorization, Zod validation, secure password hashing, JWT authentication, and transaction-based order processing.",
+        "A full-stack e-commerce platform built with Next.js, Prisma, and PostgreSQL.\nFeatures secure authentication, product and category management, customer reviews, a shopping cart, checkout, and order tracking.\nIncludes administrative management fearures: Product, category creation and management, and orders status update, with role-based authorization, Zod validation, secure password hashing, JWT authentication, and transaction-based order processing.",
       url: "https://nextjs-ecommerce-phi-pearl.vercel.app/",
     },
   ];
