@@ -105,11 +105,11 @@ const HomePage = () => {
           </div>
 
           <h2 className="mt-6 text-2xl font-medium text-foreground sm:text-3xl">
-            Fullstack Developer
+            Front-End Developer
           </h2>
 
           <p className="mt-4 max-w-xl text-base text-muted">
-            I'm a Computer Engineering student and Full-Stack Developer focused
+            I'm a Computer Engineering student and Front-End Developer focused
             on building modern web applications with React and Next.js. I enjoy
             solving technical problems and turning ideas into functional,
             reliable projects. I'm eager to begin my professional journey,
