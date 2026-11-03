@@ -45,12 +45,20 @@ const HomePage = () => {
   ];
   const projects = [
     {
-      image: "/images/projects/My-Ecommerce-Project.webp",
+      image: "/images/projects/Ecommerce-KSP-SHOP-project.webp",
       name: "KSP Shop — Full-Stack E-commerce",
       type: "Fullstack",
       description:
         "A full-stack e-commerce platform built with Next.js, Prisma, and PostgreSQL.\nFeatures secure authentication, product and category management, customer reviews, a shopping cart, checkout, and order tracking.\nIncludes administrative management fearures: Product, category creation and management, and orders status update, with role-based authorization, Zod validation, secure password hashing, JWT authentication, and transaction-based order processing.",
       url: "https://nextjs-ecommerce-phi-pearl.vercel.app/",
+    },
+    {
+      image: "/images/projects/blog-TechnoGaming-Project.webp",
+      name: "TechnoGaming – Gaming & Technology Blog",
+      type: "Blog",
+      description:
+        "Developed a Persian-language blog featuring 19 articles about gaming, PC hardware, and technology. Implemented dynamic article rendering, category-based navigation, related articles, and SEO metadata using Vanilla JavaScript.",
+      url: "https://technogaming.vercel.app/",
     },
   ];
 
@@ -242,7 +250,7 @@ const HomePage = () => {
 
               <div className="mt-5 flex flex-wrap gap-2">
                 <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
-                  Fullstack
+                  {item.type}
                 </span>
               </div>
 
