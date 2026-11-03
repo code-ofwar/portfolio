@@ -59,8 +59,13 @@ A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS to
 
 A full-stack e-commerce application featuring authentication, product management, a shopping cart, checkout, order tracking, and administrative management features.
 
+## Deployment
+
+The website is deployed on Vercel.
+
 ## Author
 
-GitHub: https://github.com/code-ofwar
+**Mohammadreza Mahavi**
 
-
+- [GitHub](https://github.com/code-ofwar)
+- [Portfolio](https://codeofwar-portfolio.vercel.app/)
